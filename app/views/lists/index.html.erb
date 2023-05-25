@@ -1,0 +1,15 @@
+<div class="card-category mb-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.squarespace-cdn.com/content/v1/5238a985e4b052b32771f777/1532798892106-EHFF1BQ8G38FVPJWVVO2/q-theatre-banner.jpg?format=2500w)">
+  Save any Kind of Movies
+</div>
+
+<%= link_to 'Create a New List', new_list_path, class: 'btn btn-primary m-3' %>
+
+<div class="container">
+  <div class="cards ml-3">
+    <% @lists.each do |list| %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+      <%= link_to list.name, list_path(list.id) %>
+    </div>
+    <% end %>
+  </div>
+</div>

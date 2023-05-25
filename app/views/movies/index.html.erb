@@ -1,0 +1,14 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-steam-wave-international-film-festival-banner-poster-image_195212.jpg);">
+  <div class="container">
+    <h1>All Movies</h1>
+  </div>
+</div>
+
+
+<div>
+  <% @movies.each do |movie| %>
+    <h3><%= movie.title %></h3>
+    <img src="<%= movie.poster_url %>" width=200 alt="<%= movie.title %>">
+    <p><%= movie.rating %></p>
+  <% end %>
+</div>
