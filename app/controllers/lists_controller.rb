@@ -6,8 +6,6 @@ class ListsController < ApplicationController
   def show
     @list = List.find(params[:id])
     @bookmarks = Bookmark.where(list: @list)
-    @movies_arr = @bookmarks.map { |bookmark| bookmark.movie_id }
-    @movies = @movies_arr.map { |id| Movie.find(id) }
   end
 
   def new
