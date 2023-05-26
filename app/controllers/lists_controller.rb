@@ -24,6 +24,6 @@ class ListsController < ApplicationController
   private
 
   def review_params
-    params.require(:list).permit(:name)
+    params.require(:list).permit(:name, :picture)
   end
 end

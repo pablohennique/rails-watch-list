@@ -7,8 +7,10 @@
 <div class="container">
   <div class="cards ml-3">
     <% @lists.each do |list| %>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-      <%= link_to list.name, list_path(list.id) %>
+    <div class="card-category"
+        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        url('<%= cl_image_path list.picture.key, height: 300, crop: :fill %>')">
+        <%= link_to list.name, list_path(list.id) %>
     </div>
     <% end %>
   </div>
