@@ -1,24 +1,18 @@
-# README
+# Watch List
+Lightweight application to bookmark movies into "watch lists"
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://rails-watch-list-pablo.herokuapp.com/
 
-Things you may want to cover:
+# How it Works
+User can create new bookmarks, upload an image to customize his/her bookmark and and assign movies to each bookmark to create categories
 
-* Ruby version
+# Set Up
+Clone this repository. Create a .env file in the project directory. Add your Cloudinary key to the .env file as follows:
 
-* System dependencies
+CLOUDINARY_URL=your_api_key_here
 
-* Configuration
+Run: bundle install
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Running the Script
+Run your rails server
+Open your local host
