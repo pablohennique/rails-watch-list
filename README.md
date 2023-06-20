@@ -15,4 +15,5 @@ Run: bundle install
 
 # Running the Script
 Run your rails server
+Yarn JavaScript compiler
 Open your local host
